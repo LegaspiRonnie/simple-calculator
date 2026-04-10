@@ -6,7 +6,7 @@ A clean, functional, and responsive calculator web application designed for simp
 
 ## 📸 Project Showcases
 
-To provide a clear view of the application across different states and devices, here is a visual overview:
+To provide a clear view of the application across different size and calculation, here is a visual overview:
 
 <p align="center">
   <img src="assets/a.png" width="30%" alt="Calculator Desktop View" />
