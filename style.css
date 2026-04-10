@@ -1,0 +1,136 @@
+/* ── Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Page ── */
+body {
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  background-color: #09090b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* ── Calculator shell ── */
+.calculator {
+  width: 320px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #27272a;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.6);
+}
+
+/* ── Display ── */
+.display {
+  background-color: #18181b;
+  padding: 2rem 1.5rem 1.25rem;
+  text-align: right;
+}
+
+.expression {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+  color: #71717a;
+  letter-spacing: 0.04em;
+  min-height: 20px;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result {
+  font-family: 'DM Mono', monospace;
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+/* ── Button grid ── */
+.buttons {
+  background-color: #18181b;
+  padding: 0.75rem 1rem 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+/* ── Base button ── */
+.btn {
+  border: none;
+  border-radius: 16px;
+  padding: 18px 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.1s ease, transform 0.08s ease;
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.93);
+}
+
+/* ── Number buttons ── */
+.btn-number {
+  background-color: #27272a;
+  color: #ffffff;
+}
+
+.btn-number:hover {
+  background-color: #3f3f46;
+}
+
+/* ── Utility buttons (AC, +/-, %) ── */
+.btn-utility {
+  background-color: #3f3f46;
+  color: #d4d4d8;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-utility:hover {
+  background-color: #52525b;
+}
+
+/* ── Operator buttons (÷ × − +) ── */
+.btn-operator {
+  background-color: #fbbf24;
+  color: #451a03;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.btn-operator:hover {
+  background-color: #fcd34d;
+}
+
+/* ── Equals button ── */
+.btn-equals {
+  background-color: #f43f5e;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.btn-equals:hover {
+  background-color: #fb7185;
+}
+
+/* ── Zero button (spans 2 columns) ── */
+.btn-zero {
+  grid-column: span 2;
+  text-align: left;
+  padding-left: 28px;
+}
